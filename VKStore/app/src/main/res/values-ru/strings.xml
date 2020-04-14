@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VKStore</string>
+    <string name="items_loading_retry">Повторить</string>
+    <string name="items_loading_error">Ошибка загрузки</string>
+    <string name="welcome_message_login">Зайти с помощью ВКонтакте</string>
+    <string name="welcome_message">Нажмите на кнопку ниже чтобы</string>
+    <string name="items_item_empty">Список пуст</string>
+    <string name="title_groups">%s, магазины</string>
+    <string name="title_products">Продукты сообщества %s</string>
+    <string name="title_cities">Город</string>
+    <string name="title_groups_no_city">Выберите город</string>
+    <string name="text_add_fave">Добавить в избранное</string>
+    <string name="text_remove_fave">Удалить из избранного</string>
+    <string name="type_group">Группа</string>
+    <string name="type_page">Публичная страница</string>
+    <string name="type_event">Мероприятие</string>
+</resources>

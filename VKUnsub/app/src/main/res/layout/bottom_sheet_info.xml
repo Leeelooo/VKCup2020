@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bottom_sheet_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:textAppearance="@style/AppTheme.TextTitle"
+            app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_dismiss"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Happy Santa" />
+
+        <ImageView
+            android:id="@+id/bottom_sheet_dismiss"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:padding="@dimen/micro_padding"
+            android:src="@drawable/ic_dismiss"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bottom_sheet_subs_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="@dimen/gutter_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:src="@drawable/ic_followers"
+            app:layout_constraintStart_toStartOf="@+id/bottom_sheet_title"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_title" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_subs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:textAppearance="@style/AppTheme.BottomSheetInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bottom_sheet_subs_icon"
+            app:layout_constraintTop_toTopOf="@+id/bottom_sheet_subs_icon"
+            tools:text="188.2K subscribers · 19 friends" />
+
+        <ImageView
+            android:id="@+id/bottom_sheet_descr_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="@dimen/gutter_default"
+            android:layout_marginTop="@dimen/gutter_default"
+            android:src="@drawable/ic_article"
+            app:layout_constraintStart_toStartOf="@+id/bottom_sheet_title"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_subs" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:textAppearance="@style/AppTheme.BottomSheetInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bottom_sheet_descr_icon"
+            app:layout_constraintTop_toTopOf="@+id/bottom_sheet_descr_icon"
+            tools:text="Разрабатываем приложения для вас и ваших друзей с 2011 года." />
+
+        <ImageView
+            android:id="@+id/bottom_sheet_last_post_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="@dimen/gutter_default"
+            android:layout_marginTop="@dimen/gutter_default"
+            android:src="@drawable/ic_newsfeed_outline"
+            app:layout_constraintStart_toStartOf="@+id/bottom_sheet_title"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_description" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_last_post"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:textAppearance="@style/AppTheme.BottomSheetInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bottom_sheet_last_post_icon"
+            app:layout_constraintTop_toTopOf="@+id/bottom_sheet_last_post_icon"
+            tools:text="Последняя запись 8 февраля" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bottom_sheet_open_group"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="@dimen/margin_default"
+            android:text="@string/open_group"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_last_post" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VKShare</string>
+    <string name="share_btn_text">Send</string>
+    <string name="bottom_sheet_title">Share on wall</string>
+    <string name="message_title">Share photos</string>
+    <string name="message_info">Share photo on the wall and add description to it</string>
+    <string name="choose_photo_btn_text">Choose photo</string>
+    <string name="add_comment">Add comment</string>
+    <string name="welcome_message">Click button below to</string>
+    <string name="welcome_message_login">Log in with VK</string>
+    <string name="post_share_ok">Post shared</string>
+    <string name="post_share_error">Loading error</string>
+</resources>

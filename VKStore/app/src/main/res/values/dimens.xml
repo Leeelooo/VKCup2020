@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="gutter_default">8dp</dimen>
+    <dimen name="micro_padding">4dp</dimen>
+    
+    <dimen name="margin_edge_toolbar">16dp</dimen>
+    <dimen name="elevation_toolbar_default">0dp</dimen>
+
+    <dimen name="dimen_icon">30dp</dimen>
+    <dimen name="dimen_icon_paddingless">36dp</dimen>
+    <dimen name="dimen_group_preview">48dp</dimen>
+    <dimen name="height_group_item">64dp</dimen>
+
+</resources>

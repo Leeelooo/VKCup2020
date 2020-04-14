@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryDark">#c7c7c7</color>
+    <color name="colorPrimaryLight">#ffffff</color>
+    <color name="colorAccent">#3f8ae0</color>
+    <color name="colorPrimaryBackground">#ffffff</color>
+    <color name="colorOnPrimary">#de000000</color>
+    <color name="colorOnPrimaryMedium">#99000000</color>
+
+    <color name="colorIconRemove">#ffff3347</color>
+    <color name="colorLoginButtonText">#597da3</color>
+    <color name="colorBackdrop">#CC858585</color>
+
+</resources>

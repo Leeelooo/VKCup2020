@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VKAlbums</string>
+    <string name="main_title">Альбомы</string>
+    <string name="items_loading_retry">Повторить</string>
+    <string name="items_loading_error">Ошибка загрузки</string>
+    <string name="welcome_message_login">Зайти с помощью ВКонтакте</string>
+    <string name="welcome_message">Нажмите на кнопку ниже чтобы</string>
+    <string name="items_item_empty">Список пуст</string>
+    <string name="main_editing_title">Редактирование</string>
+    <plurals name="item_album_size">
+        <item quantity="one">%d фотография</item>
+        <item quantity="few">%d фотографии</item>
+        <item quantity="many">%d фотографий</item>
+    </plurals>
+    <string name="album_create_btn">Создать</string>
+    <string name="album_create_message">Выберите название для альбома</string>
+    <string name="album_create_title">Создание альбом</string>
+    <string name="album_option_cancel">Отменить</string>
+    <string name="album_title_hint">Название</string>
+    <string name="album_delete_message">Вы действительно хотите удалить этот альбом?</string>
+    <string name="album_delete_title">Удаление альбом</string>
+    <string name="album_option_delete">Удалить</string>
+</resources>

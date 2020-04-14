@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VKUnsub</string>
+    <string name="welcome_message">Нажмите на кнопку ниже чтобы</string>
+    <string name="welcome_message_login">Зайти с помощью ВКонтакте</string>
+    <string name="items_item_empty">Список пуст</string>
+    <string name="items_loading_error">Ошибка загрузки</string>
+    <string name="items_loading_retry">Попробовать снова</string>
+    <string name="unsub_button_text">Отписаться %d</string>
+    <string name="open_group">Открыть</string>
+    <string name="main_title_expanded">Отписаться от сообществ</string>
+    <string name="main_info_expanded">Коснитесь и удерживайте, чтобы увидеть информацию о сообществе</string>
+    <plurals name="subs_count">
+        <item quantity="one">%s подписчик</item>
+        <item quantity="few">%s подписчика</item>
+        <item quantity="many">%s подписчиков</item>
+    </plurals>
+    <string name="last_post_date">Последняя запись %s</string>
+    <string name="error_snackbar">Ошибка обновления</string>
+    <string name="main_title_collapsed">Сообщества</string>
+</resources>

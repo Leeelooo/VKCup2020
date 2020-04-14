@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.EditTextLayout"
+    android:id="@+id/edit_text_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_default"
+    android:paddingRight="@dimen/margin_default" >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_default"
+        android:hint="@string/document_edit_title_hint"/>
+
+</com.google.android.material.textfield.TextInputLayout>

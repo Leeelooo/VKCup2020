@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        style="@style/AppTheme.AppBar"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_dialog">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:paddingStart="@dimen/margin_edge_toolbar"
+            android:paddingEnd="@dimen/margin_edge_toolbar"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed|enterAlways">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/exit_city_mode"
+                android:layout_width="@dimen/dimen_icon"
+                android:layout_height="@dimen/dimen_icon"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:padding="@dimen/micro_padding"
+                android:src="@drawable/ic_clear"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/city_title_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default"
+                android:singleLine="true"
+                android:text="@string/title_cities"
+                android:textAppearance="@style/TextAppearance.App.ToolbarMainTitle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/exit_city_mode"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cities_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_city"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

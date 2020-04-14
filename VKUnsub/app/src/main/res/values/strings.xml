@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">VKUnsub</string>
+    <string name="welcome_message">Click button below to</string>
+    <string name="welcome_message_login">Log in with VK</string>
+    <string name="main_title_expanded">Unsubscribe from group</string>
+    <string name="main_info_expanded">Long tap for information about group</string>
+    <string name="main_title_collapsed">Groups</string>
+    <string name="open_group">Open</string>
+    <string name="unsub_button_text">Unsubscribe %d</string>
+    <string name="items_item_empty">There is no items</string>
+    <string name="items_loading_error">Loading error</string>
+    <string name="items_loading_retry">Retry</string>
+    <string name="last_post_date">Last post %s</string>
+    <string name="error_snackbar">Refresh error</string>
+
+    <plurals name="subs_count">
+        <item quantity="one">%s follower</item>
+        <item quantity="other">%s followers</item>
+    </plurals>
+</resources>

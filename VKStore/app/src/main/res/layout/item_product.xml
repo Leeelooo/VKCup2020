@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackgroundBorderless"
+    android:tag="item">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:scaleType="centerCrop"
+        tools:src="@tools:sample/backgrounds/scenic"/>
+
+    <TextView
+        android:id="@+id/product_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gutter_default"
+        android:layout_marginEnd="@dimen/gutter_default"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.App.ItemInfo"
+        app:layout_constraintEnd_toEndOf="@+id/product_image"
+        app:layout_constraintStart_toStartOf="@+id/product_image"
+        app:layout_constraintTop_toBottomOf="@+id/product_image"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gutter_default"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.App.ItemTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/product_title"
+        app:layout_constraintStart_toStartOf="@+id/product_title"
+        app:layout_constraintTop_toBottomOf="@+id/product_title"
+        tools:text="12 stonksov" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

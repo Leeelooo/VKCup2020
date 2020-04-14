@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme.AppBar"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:paddingStart="@dimen/margin_edge_toolbar"
+        android:paddingEnd="@dimen/margin_edge_toolbar"
+        app:layout_scrollFlags="scroll|snap|exitUntilCollapsed|enterAlways">
+
+        <TextView
+            android:id="@+id/product_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/title_groups_no_city"
+            android:textAppearance="@style/TextAppearance.App.ToolbarMainTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/dropdown_city"
+            android:layout_width="@dimen/dimen_icon_paddingless"
+            android:layout_height="@dimen/dimen_icon_paddingless"
+            android:layout_marginEnd="@dimen/gutter_default"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/micro_padding"
+            android:src="@drawable/ic_more_dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/product_title_toolbar"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

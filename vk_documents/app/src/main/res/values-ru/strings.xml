@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VKDocumetns</string>
+    <string name="main_title">Документы</string>
+    <string name="filesize_bytes">%.1f Б</string>
+    <string name="filesize_gigabytes">%.1f ГБ</string>
+    <string name="filesize_kilobytes">%.1f КБ</string>
+    <string name="filesize_megabytes">%.1f МБ</string>
+    <string name="menu_item_delete">Удалить</string>
+    <string name="menu_item_rename">Переименовать</string>
+    <string name="docs_loading_retry">Повторить</string>
+    <string name="docs_loading_error">Ошибка загрузки документов</string>
+    <string name="welcome_message_login">Зайти с помощью ВКонтакте</string>
+    <string name="welcome_message">Нажмите на Профиль или на кнопку ниже чтобы</string>
+    <string name="document_option_cancel">Отменить</string>
+    <string name="document_option_delete">Удалить</string>
+    <string name="document_option_rename">Переименовать</string>
+    <string name="document_delete_message">Вы уверены что хотите удалить документ?</string>
+    <string name="document_delete_title">Удаление документа</string>
+    <string name="document_rename_message">Введите новое название документа</string>
+    <string name="document_rename_title">Переименование документа</string>
+    <string name="document_item_empty">Документов нет</string>
+    <string name="document_edit_title_hint">Название</string>
+    <string name="download_description">Загрузка документа</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar_fragment_details" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/details_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        android:fillViewport="true"
+        android:layout_gravity="fill_vertical"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/product_details_photo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:scaleType="centerCrop"
+                tools:src="@tools:sample/backgrounds/scenic"/>
+
+            <TextView
+                android:id="@+id/details_product_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:textAppearance="@style/TextAppearance.App.ItemTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/product_details_photo"
+                tools:text="@tools:sample/cities" />
+
+            <TextView
+                android:id="@+id/details_product_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.App.ItemTitle"
+                app:layout_constraintEnd_toEndOf="@+id/details_product_title"
+                app:layout_constraintStart_toStartOf="@+id/details_product_title"
+                app:layout_constraintTop_toBottomOf="@+id/details_product_title"
+                tools:text="12 stonksov" />
+
+            <TextView
+                android:id="@+id/details_product_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gutter_default"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:textAppearance="@style/TextAppearance.App.ItemInfo"
+                android:autoLink="web"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/details_product_price"
+                app:layout_constraintStart_toStartOf="@+id/details_product_price"
+                app:layout_constraintTop_toBottomOf="@+id/details_product_price"
+                tools:text="@tools:sample/lorem/random" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryBackground"
+        android:layout_gravity="bottom">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/AppTheme.Button"
+            android:id="@+id/add_fave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gutter_default"
+            android:layout_marginBottom="@dimen/gutter_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:text="@string/text_add_fave"
+            tools:visibility="gone"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/AppTheme.TextButton"
+            android:id="@+id/remove_fave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gutter_default"
+            android:layout_marginBottom="@dimen/gutter_default"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:text="@string/text_remove_fave"/>
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        style="@style/AppTheme.AppBar"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:paddingStart="@dimen/margin_edge_toolbar"
+            android:paddingEnd="@dimen/margin_edge_toolbar"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed|enterAlways">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/main_profile"
+                android:layout_width="@dimen/dimen_profile_main"
+                android:layout_height="@dimen/dimen_profile_main"
+                android:padding="@dimen/micro_padding"
+                android:layout_gravity="center_vertical|start"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_profile"
+                tools:src="@tools:sample/avatars[10]"/>
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/main_title"
+                android:textAppearance="@style/TextAppearance.App.ToolbarMainTitle"/>
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/documents_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/gutter_default"
+            tools:listitem="@layout/item_document"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

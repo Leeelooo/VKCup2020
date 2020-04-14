@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_document"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_document_preview"
+        android:layout_width="@dimen/document_preview_dimen"
+        android:layout_height="@dimen/document_preview_dimen"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginTop="@dimen/gutter_default"
+        android:layout_marginBottom="@dimen/gutter_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/item_document_more"
+        android:layout_width="@dimen/document_more_dimen"
+        android:layout_height="@dimen/document_more_dimen"
+        android:padding="@dimen/micro_padding"
+        android:layout_marginEnd="@dimen/gutter_default"
+        android:src="@drawable/ic_more"
+        android:foreground="?selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="@+id/item_document_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_document_preview" />
+
+    <TextView
+        android:id="@+id/item_document_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gutter_default"
+        android:layout_marginTop="@dimen/gutter_default"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.App.ItemTitle"
+        app:layout_constraintEnd_toStartOf="@+id/item_document_more"
+        app:layout_constraintStart_toEndOf="@+id/item_document_preview"
+        app:layout_constraintTop_toTopOf="@+id/item_document_preview"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/item_document_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.App.ItemInfo"
+        app:layout_constraintEnd_toEndOf="@+id/item_document_title"
+        app:layout_constraintStart_toStartOf="@+id/item_document_title"
+        app:layout_constraintTop_toBottomOf="@+id/item_document_title"
+        tools:text="VCF · 7KB · yesterday" />
+
+    <TextView
+        android:id="@+id/item_document_tags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_tag"
+        android:drawablePadding="@dimen/micro_padding"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.App.ItemInfo"
+        app:layout_constraintEnd_toStartOf="@+id/item_document_more"
+        app:layout_constraintStart_toStartOf="@+id/item_document_info"
+        app:layout_constraintTop_toBottomOf="@+id/item_document_info"
+        tools:text="Pepega" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

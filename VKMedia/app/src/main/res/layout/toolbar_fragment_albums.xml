@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme.AppBar"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:paddingStart="@dimen/margin_edge_toolbar"
+        android:paddingEnd="@dimen/margin_edge_toolbar"
+        app:layout_scrollFlags="scroll|snap|exitUntilCollapsed|enterAlways">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logout"
+            android:layout_width="@dimen/dimen_toolbar_icon_paddingless"
+            android:layout_height="@dimen/dimen_toolbar_icon_paddingless"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/micro_padding"
+            android:src="@drawable/ic_exit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/gutter_default"
+            android:text="@string/main_title"
+            android:textAppearance="@style/TextAppearance.App.ToolbarMainTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edit_mode"
+            app:layout_constraintStart_toEndOf="@+id/logout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/add_album"
+            android:layout_width="@dimen/dimen_toolbar_icon_paddingless"
+            android:layout_height="@dimen/dimen_toolbar_icon_paddingless"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/micro_padding"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/edit_mode"
+            android:layout_width="@dimen/dimen_toolbar_icon"
+            android:layout_height="@dimen/dimen_toolbar_icon"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/micro_padding"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/add_album"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/exit_edit_mode"
+            android:layout_width="@dimen/dimen_toolbar_icon_paddingless"
+            android:layout_height="@dimen/dimen_toolbar_icon_paddingless"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:padding="@dimen/micro_padding"
+            android:src="@drawable/ic_clear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/edit_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:text="@string/main_editing_title"
+            android:textAppearance="@style/TextAppearance.App.ToolbarMainTitle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/exit_edit_mode"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

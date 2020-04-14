@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VKStore</string>
+
+    <string name="title_groups">Stores in %s</string>
+    <string name="title_products">Products of %s</string>
+
+    <string name="items_loading_error">Loading error</string>
+    <string name="items_loading_retry">Retry</string>
+    <string name="welcome_message">Click button below to</string>
+    <string name="welcome_message_login">Log in with VK</string>
+
+    <string name="items_item_empty">There is no items</string>
+    <string name="title_cities">City</string>
+    <string name="title_groups_no_city">Choose city</string>
+    <string name="text_add_fave">Add to favorites</string>
+    <string name="text_remove_fave">Remove from favorites</string>
+    <string name="type_group">Group</string>
+    <string name="type_page">Public page</string>
+    <string name="type_event">Event</string>
+
+</resources>

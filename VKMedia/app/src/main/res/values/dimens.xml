@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="gutter_default">8dp</dimen>
+    <dimen name="micro_padding">4dp</dimen>
+    
+    <dimen name="margin_edge_toolbar">16dp</dimen>
+    <dimen name="elevation_toolbar_default">0dp</dimen>
+
+    <dimen name="dimen_toolbar_icon">30dp</dimen>
+    <dimen name="dimen_toolbar_icon_paddingless">36dp</dimen>
+    <dimen name="dimen_album_delete_icon">28dp</dimen>
+
+</resources>

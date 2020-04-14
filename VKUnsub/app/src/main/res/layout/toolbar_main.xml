@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme.AppBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutExpandedTextStyle"
+        app:title="@string/main_title_collapsed"
+        app:collapsedTitleTextAppearance="@style/AppTheme.ToolbarMainTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="?android:actionBarSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/AppTheme.ToolbarMainTitle"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:textAlignment="center"
+                android:text="@string/main_title_expanded"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/AppTheme.TextInfo"
+                android:layout_marginStart="72dp"
+                android:layout_marginEnd="72dp"
+                android:layout_marginBottom="@dimen/gutter_default"
+                android:textAlignment="center"
+                android:text="@string/main_info_expanded"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin"/>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
